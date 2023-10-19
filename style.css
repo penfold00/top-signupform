@@ -10,10 +10,13 @@
 }
 
 body {
-  display: flex;
+  margin: 0;
   width: 100vw;
   height: 100vh;
-  margin: 0;
+
+  display: flex;
+
+  font-family: Quicksand;
 }
 
 .logo-section {
@@ -28,7 +31,7 @@ body {
 
   height: 100%;
   width: 35%;
-  padding-top: 10%;
+  padding-top: 13%;
 
   flex: auto;
 
@@ -38,14 +41,6 @@ body {
 
   color: #fff;
   font-family: "Quicksand", serif;
-}
-
-.form-section {
-  background: lightgray;
-
-  height: 100%;
-  width: 65%;
-  flex: auto;
 }
 
 .logo-container {
@@ -83,4 +78,71 @@ body {
 .credentials-text {
   font-weight: 900;
   font-size: 1.2rem;
+}
+
+.form-section {
+  background: lightgray;
+
+  height: 100%;
+  width: 65%;
+  padding-top: 8%;
+
+  flex: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.intro-text {
+  padding-left: 3%;
+  padding-right: 30%;
+  font-size: 2rem;
+}
+
+.form-fields {
+  width: 100%;
+  padding: 50px 50% 50px 3%;
+  border-top: 1px solid #aaa;
+  box-shadow: 5px 30px 30px 10px rgba(80, 80, 80, 0.2);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6%;
+}
+input,
+label {
+  display: block;
+}
+
+.form-fields div {
+  width: 47%;
+  margin-bottom: 30px;
+}
+input {
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 10px;
+}
+input:valid {
+  border: 1px solid darkgreen;
+}
+input:invalid {
+  border: 1px solid red;
+}
+input:focus {
+  border: 1px solid darkblue;
+}
+input.error {
+  border: 1px solid red;
+}
+.error-msg {
+  font-size: 0.9rem;
+  color: red;
+  margin-top: 5px;
+}
+button {
+  margin: 100px 0 0 3%;
+  padding: 30px 60px;
+  font-size: 2rem;
 }
