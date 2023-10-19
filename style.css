@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url("font/Quicksand-Regular.otf");
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.logo-section {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(229, 157, 100, 0.2),
+      rgba(229, 157, 100, 0.2)
+    ),
+    url("./img/bg.jpg");
+  background-size: 200%;
+  background-position: center;
+
+  height: 100%;
+  width: 35%;
+  padding-top: 10%;
+
+  flex: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  color: #fff;
+  font-family: "Quicksand", serif;
+}
+
+.form-section {
+  background: lightgray;
+
+  height: 100%;
+  width: 65%;
+  flex: auto;
+}
+
+.logo-container {
+  background: linear-gradient(
+    to bottom,
+    rgba(100, 100, 100, 0.3),
+    rgba(100, 100, 100, 0.3)
+  );
+  height: 250px;
+  padding: 20px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.logo-img {
+  height: 100%;
+}
+.logo-text {
+  font-size: 6rem;
+}
+
+.credentials-container {
+  background: linear-gradient(
+    to bottom,
+    rgba(100, 100, 100, 0.3),
+    rgba(100, 100, 100, 0.3)
+  );
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.credentials-text {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
