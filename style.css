@@ -81,8 +81,6 @@ body {
 }
 
 .form-section {
-  background: lightgray;
-
   height: 100%;
   width: 65%;
   padding-top: 8%;
@@ -116,13 +114,14 @@ label {
 }
 
 .form-fields div {
-  width: 47%;
+  width: max(300px, 47%);
   margin-bottom: 30px;
 }
 input {
   font-size: 1.5rem;
   width: 100%;
   padding: 10px;
+  border: 1px solid #aaa;
 }
 input:valid {
   border: 1px solid darkgreen;
@@ -140,9 +139,12 @@ input.error {
   font-size: 0.9rem;
   color: red;
   margin-top: 5px;
+  visibility: hidden;
 }
 button {
   margin: 100px 0 0 3%;
   padding: 30px 60px;
   font-size: 2rem;
+  font-weight: 500;
+  font-family: "Quicksand", serif;
 }
